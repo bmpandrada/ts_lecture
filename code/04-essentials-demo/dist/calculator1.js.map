@@ -1,0 +1,1 @@
+{"version":3,"file":"calculator1.js","sourceRoot":"","sources":["../calculator1.ts"],"names":[],"mappings":"AAsBA,SAAS,oBAAoB,CAAC,IAAoB;AAElD,CAAC;AAGD,SAAS,yBAAyB,CAAC,OAAe;IAClD,eAAe;IACf,OAAO,CAAC,GAAG,CAAC,oBAAoB,EAAE,OAAO,CAAC,CAAC;AAC3C,CAAC;AAED,MAAM,OAAO,GAAG,oBAAoB,CAAC,IAAI,CAAC,gBAAgB,CAAC,CAAC,CAAC;AAE7D,yBAAyB,CAAC,OAAO,CAAC,CAAC"}
