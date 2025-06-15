@@ -1,24 +1,25 @@
-type FileSource = { type: 'file'; path: string };
+type FileSource = { type: 'file'; path: string };// --> type guard type: 'file'
 const fileSource: FileSource = {
-  type: 'file',
+  type: 'file', // --> type guard type: 'file'
   path: 'some/path/to/file.csv',
 };
 
-type DBSource = { type: 'db', connectionUrl: string };
+type DBSource = { type: 'db', connectionUrl: string }; // --> type guard type: 'db'
 const dbSource: DBSource = {
-  type: 'db',
+  type: 'db', // --> type guard type: 'db'
   connectionUrl: 'some-connection-url',
 };
 
 type Source = FileSource | DBSource;
+// interface Source extends FileSource, DBSource {}
 
-function isFile(source: Source) {
-  return source.type === 'file';
+function isFile(source: Source) { // create a type guard firts as dry Code
+  return source.type === 'file'; // is true if source is FileSource
 }
 
 function loadData(source: Source) {
   // if ('path' in source) {
-  if (isFile(source)) {
+  if (isFile(source)) { // apply type guard
     // source.path
     // source.path; => use that to open the file
     return;

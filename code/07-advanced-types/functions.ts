@@ -1,3 +1,4 @@
+// functon overloads allow you to define multiple signatures for a function
 function getLength(val: any[]): number;
 function getLength(val: string): string;
 function getLength(val: string | any[]) {
